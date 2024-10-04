@@ -14,4 +14,5 @@ public class AdressePostale {
         this.ville=ville;
 
     }
+
 }
