@@ -4,7 +4,7 @@ public class TestMethodeStatic {
     public static void main(String[] args) {
         String chaine = "12";
 
-        int chaintInt = Integer. parseInt(chaine);
+        int chaintInt = Integer.parseInt(chaine);
 
         int a = 4;
         int b = 6;
