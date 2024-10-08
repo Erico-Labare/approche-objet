@@ -1,4 +1,4 @@
-package fr.diginamic.operations.fr.diginamic;
+package fr.diginamic.operations;
 
 public class Operations {
 
@@ -12,7 +12,7 @@ public class Operations {
                 if (b != 0) {
                     return a / b;
                 }else {
-                    System.out.println("Division par zero");
+                    System.out.println("- Division par zero");
                     return 0;
                 }
 
