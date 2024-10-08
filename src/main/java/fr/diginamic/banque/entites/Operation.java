@@ -2,25 +2,26 @@ package fr.diginamic.banque.entites;
 
 public abstract class Operation {
 
-    private String dateOperation;
+    private String date;
     private double montant;
 
-    public Operation(String dateOperation, double montant) {
-        this.dateOperation = dateOperation;
+    public Operation(String date, double montant) {
+        this.date = date;
         this.montant = montant;
-    }
-
-    public String getDateOperation() {
-        return dateOperation;
-    }
-    public double getMontant () {
-        return montant;
     }
 
     public abstract String getType();
 
     @Override
     public String toString() {
-        return dateOperation + " : " + montant;
+        return date + " : " + montant;
     }
+
+    public String getDate() {
+        return date;
+    }
+    public double getMontant () {
+        return montant;
+    }
+
 }
