@@ -2,11 +2,10 @@ package fr.diginamic.maison;
 
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Maison {
 
-    private List<Piece> pieces = new ArrayList<>();
+    private ArrayList<Piece> pieces = new ArrayList<>();
 
     //ajout de pièce
     public void ajouterPiece(Piece piece) {
