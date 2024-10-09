@@ -22,6 +22,7 @@ public class TestListeString {
         for (int i = 0; i < listeVilles.size(); i++) {
             listeVilles.set(i, listeVilles.get(i).toUpperCase());
         }
+        //listeVilles.replaceAll(String::toUpperCase);
         System.out.println(listeVilles);
 
         listeVilles.removeIf(temp -> temp.startsWith("N"));

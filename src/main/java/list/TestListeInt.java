@@ -22,7 +22,7 @@ public class TestListeInt {
         System.out.println(listeEntier.size());
 
         int max = listeEntier.get(0);
-        //int max = Integer.MAX_VALUE
+        //int max = Integer.MIN_VALUE
         for (Integer temp : listeEntier) {
             if (temp > max) {
                 max = temp;
@@ -31,7 +31,7 @@ public class TestListeInt {
         System.out.println(max);
 
         int min = listeEntier.get(0);
-        //int min = Integer.MIN_VALUE
+        //int min = Integer.MAX_VALUE
         for (Integer temp : listeEntier) {
             if (temp < min) {
                 min = temp;
