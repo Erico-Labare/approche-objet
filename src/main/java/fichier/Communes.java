@@ -1,12 +1,12 @@
 package fichier;
 
-public class Villes {
+public class Communes {
     private String nom;
     private String codeDepartement;
     private String nomRegion;
     private int populationTotale;
 
-    public Villes(String nom, String codeDepartement, String nomRegion, int populationTotale) {
+    public Communes(String nom, String codeDepartement, String nomRegion, int populationTotale) {
         this.nom = nom;
         this.codeDepartement = codeDepartement;
         this.nomRegion = nomRegion;
@@ -24,5 +24,13 @@ public class Villes {
     }
     public int getPopulationTotale() {
         return populationTotale;
+    }
+
+    @Override
+    public String toString() {
+        return "\n"+ nom +
+               ", " + codeDepartement +
+               " " + nomRegion +
+               ", populationTotale = " + populationTotale;
     }
 }
