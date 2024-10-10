@@ -1,6 +1,7 @@
 package list;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class TestVilles {
 
@@ -15,10 +16,18 @@ public class TestVilles {
         listeVilles.add(new Ville("Marseille", 850700));
         listeVilles.add(new Ville("Tarbes", 40600));
 
+
+
         System.out.print("Liste des villes : ");
         for (Ville ville : listeVilles) {
             System.out.print(ville.getNom() + " ");
         }
+        System.out.print("\nListe des villes avec tri : ");
+        Collections.sort(listeVilles);
+        for (Ville temp: listeVilles){
+            System.out.print(temp.toString()+" ");
+        }
+
 
         Ville lePlusDHab = listeVilles.getFirst();
         for (Ville temp : listeVilles) {
