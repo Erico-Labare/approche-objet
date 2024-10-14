@@ -2,11 +2,11 @@ package fr.diginamic.automates;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+import static fr.diginamic.automates.JeuDeLaVie.lectureGrille;
 
 public class TestJeuDeLaVie {
     public static void main(String[] args) throws IOException {
@@ -141,24 +141,6 @@ public class TestJeuDeLaVie {
             System.out.println("Génération " + (i + 1) + ":");
             jeu.affichage();
         }
-    }
-
-    // Fonction pour lire la grille depuis un fichier
-    public static boolean[][] lectureGrille(String cheminFichier) throws IOException {
-        List<String> lignes = Files.readAllLines(Paths.get(cheminFichier));
-
-        int x = lignes.size();
-        int y = lignes.get(0).split(" ").length;
-
-        boolean[][] grille = new boolean[x][y];
-
-        for (int i = 0; i < x; i++) {
-            String[] cellules = lignes.get(i).split(" ");
-            for (int j = 0; j < y; j++) {
-                grille[i][j] = cellules[j].equals(".");
-            }
-        }
-        return grille;
     }
 
 // - AVANT MISE EN PLACE DU MENU DE CONFIGURATION
